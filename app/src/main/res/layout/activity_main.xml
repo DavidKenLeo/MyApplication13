@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dkl.auser.myapplication.MainActivity">
+
+    <Button
+        android:id="@+id/buttonClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按我下載圖片"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonClick"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonClick"
+        android:layout_alignRight="@+id/buttonClick"
+        android:layout_below="@+id/buttonClick"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+</RelativeLayout>
